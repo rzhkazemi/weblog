@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE HTML>
+<head>
+<title>Elegant Blogger</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" media="screen" href="{% static 'CSS/style.css' %}">
+<link rel="stylesheet" type="text/css" media="screen" href="{% static 'menu/css/simple_menu.css' %}">
+<link rel="stylesheet" href="{% static 'CSS/nivo-slider.css' %}" type="text/css" media="screen">
+<link rel="stylesheet" type="text/css" href="{% static 'boxes/css/style6.css' %}">
+<!-- Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+<!--JS FILES STARTS-->
+<script src="{% static 'JS/jquery.min.js' %}"></script>
+<script src="{% static 'JS/custom.js' %}"></script>
+<script src="{% static 'JS/slides/slides.min.jquery.js' %}"></script>
+<script src="{% static 'JS/cycle-slider/cycle.js' %}"></script>
+<script src="{% static 'JS/nivo-slider/jquery.nivo.slider.js' %}"></script>
+<script src="{% static 'JS/tabify/jquery.tabify.js' %}"></script>
+<script src="{% static 'JS/prettyPhoto/jquery.prettyPhoto.js' %}"></script>
+<script src="{% static 'JS/twitter/jquery.tweet.js' %}"></script>
+<script src="{% static 'JS/scrolltop/scrolltopcontrol.js' %}"></script>
+<script src="{% static 'JS/portfolio/filterable.js' %}"></script>
+<script src="{% static 'JS/modernizr/modernizr-2.0.3.js' %}"></script>
+<script src="{% static 'JS/easing/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'JS/kwicks/jquery.kwicks-1.5.1.pack.js' %}"></script>
+<script src="{% static 'JS/swfobject/swfobject.js' %}"></script>
+<!-- get fancybox -->
+<link rel="stylesheet" type="text/css" itemprop="javascript" href="{% static 'JS/fancybox/jquery.fancybox.css' %}" media="all">
+<script src="{% static 'JS/fancybox/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'JS/fancybox/jquery.fancybox-1.2.1.js' %}"></script>
+</head>
+<body>
+<div id="site_title"><a href="index.html"> <img src="{{MEDIA_URL}}Images/img/logo.png" alt=""></a>
+  <div id="social_icons"> <a href="#"><img src="{{MEDIA_URL}}Images/img/icon_fb.png" alt=""></a> <a href="#"><img src="{{MEDIA_URL}}Images/img/icon_twitter.png" alt=""></a> <img src="{{MEDIA_URL}}Images/img/icon_in.png" alt=""> </div>
+</div>
+{% include 'partials/header.html' %}
+{% block content %}
+{% endblock  %}
+<div style="clear:both; height: 40px"></div>
+{% include 'partials/footer.html' %}
+<div id="shadow"></div>
+</body>
+</html>
